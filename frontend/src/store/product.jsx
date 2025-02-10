@@ -14,9 +14,9 @@ export const useProductStore = create((set) => ({
       },
       body: JSON.stringify(newProduct),
     });
-    const data = res.json();
+    const data = await res.json();
     set((state) => ({ products: [...state.products, data.data] })); // Optimistic update
-    get.fetchProducts(); // Refetch to get fresh data from the server
+    await useProductStore.getState.fetchProducts(); // Refetch to get fresh data from the server
     return { success: true, message: "Added product successfully." };
   },
   fetchProducts: async () => {
@@ -35,7 +35,7 @@ export const useProductStore = create((set) => ({
     }
     // updating product list without need to resfresh page
     set((state) => ({
-      products: state.products.filter((product) => product._id !== product.pid),
+      products: state.products.filter((product) => product._id !== id),
     }));
     return { success: data.success, message: data.message };
   },
