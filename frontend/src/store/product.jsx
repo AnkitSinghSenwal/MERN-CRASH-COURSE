@@ -15,7 +15,8 @@ export const useProductStore = create((set) => ({
       body: JSON.stringify(newProduct),
     });
     const data = res.json();
-    set((state) => ({ products: [...state.products, data.data] }));
+    set((state) => ({ products: [...state.products, data.data] })); // Optimistic update
+    get.fetchProducts(); // Refetch to get fresh data from the server
     return { success: true, message: "Added product successfully." };
   },
   fetchProducts: async () => {

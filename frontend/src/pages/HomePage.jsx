@@ -8,7 +8,7 @@ const HomePage = () => {
   const { fetchProducts, products } = useProductStore();
   useEffect(() => {
     fetchProducts();
-  }, [fetchProducts, products]);
+  }, [fetchProducts]);
 
   console.log(products);
 
