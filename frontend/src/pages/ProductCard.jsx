@@ -119,7 +119,7 @@ const ProductCard = ({ product }) => {
                 onChange={(e) =>
                   setUpdatedProduct((prev) => ({
                     ...prev,
-                    name: e.target.value.trim(),
+                    name: e.target.value,
                   }))
                 }
               />
