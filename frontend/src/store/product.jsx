@@ -16,7 +16,7 @@ export const useProductStore = create((set) => ({
     });
     const data = await res.json();
     set((state) => ({ products: [...state.products, data.data] })); // Optimistic update
-    await useProductStore.getState.fetchProducts(); // Refetch to get fresh data from the server
+    await useProductStore.getState().fetchProducts(); // Refetch to get fresh data from the server
     return { success: true, message: "Added product successfully." };
   },
   fetchProducts: async () => {
