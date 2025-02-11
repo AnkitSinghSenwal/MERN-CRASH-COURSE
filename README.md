@@ -3,6 +3,7 @@ A full-stack MERN (MongoDB, Express, React, Node.js) application. This project p
 
 ## 📂 Project Structure
 /MERN-CRASH-COURSE
+
 │── /backend          # Express.js backend  
 │── /frontend         # React.js frontend  
 │── /node_modules     # Dependencies (ignored in .gitignore)  
