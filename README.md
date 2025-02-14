@@ -1,4 +1,4 @@
-# MERN Crash Course 🚀
+# Product Store 🚀
 A full-stack MERN (MongoDB, Express, React, Node.js) application. This project provides a backend with Express and MongoDB, and a React-based frontend.
 
 ## 📂 Project Structure
