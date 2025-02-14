@@ -2,7 +2,7 @@
 A full-stack MERN (MongoDB, Express, React, Node.js) application. This project provides a backend with Express and MongoDB, and a React-based frontend.
 
 ## 📂 Project Structure
-/MERN-CRASH-COURSE
+/Product-Store
 
 │── /backend          # Express.js backend  
 │── /frontend         # React.js frontend  
@@ -18,8 +18,8 @@ A full-stack MERN (MongoDB, Express, React, Node.js) application. This project p
 
 ### 1️⃣ Clone the repository  
 ```
-git clone https://github.com/your-username/MERN-CRASH-COURSE.git
-cd MERN-CRASH-COURSE
+git clone https://github.com/AnkitSinghSenwal/Product-Store.git
+cd Product-Store
 ```
 ### 2️⃣ Install dependencies
 ```
