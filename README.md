@@ -52,6 +52,7 @@ Frontend: React.js
 Build Tools: Nodemon, npm
 
 ## 🌟 Features
+
 ✅ Full-stack MERN application
 ✅ API with Express & MongoDB
 ✅ React frontend
